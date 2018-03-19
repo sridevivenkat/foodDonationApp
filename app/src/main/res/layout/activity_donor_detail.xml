@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.student17.donatefood.DonorDetail">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="83dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:singleLine="false"
+        android:text="Name"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="137dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="85dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginStart="31dp"
+        android:text="Contact"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEdit" />
+
+    <EditText
+        android:id="@+id/contactEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="85dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="267dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="7dp"
+        android:text="City"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactEdit" />
+
+    <EditText
+        android:id="@+id/cityEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_marginEnd="137dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="232dp"
+        android:layout_height="74dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stateEdit">
+
+        <RadioButton
+            android:id="@+id/donor"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Veg" />
+
+        <RadioButton
+            android:id="@+id/recpt"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:text="Non-veg"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="267dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="83dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="269dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="5dp"
+        android:text="State"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cityEdit" />
+
+    <EditText
+        android:id="@+id/stateEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="137dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="114dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="29dp"
+        android:text="Register"
+        app:layout_constraintEnd_toStartOf="@+id/btnNext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="29dp"
+        android:text="next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+
+</android.support.constraint.ConstraintLayout>

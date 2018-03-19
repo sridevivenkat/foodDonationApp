@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.student17.donatefood">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ghyt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ghyt"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Option" />
+        <activity android:name=".DonorDetail" />
+        <activity android:name=".Registered" />
+        <activity android:name=".View"></activity>
+    </application>
+
+</manifest>
